@@ -1,0 +1,29 @@
+
+public class MyFstJavaCode {
+	int x;
+	static int y;
+	// static var have their own memory , 
+	// class vars
+	// tied up with class 
+	//appers to exist even b4 object 
+	MyFstJavaCode(){
+		x=10;
+		y=50;
+	}
+	
+	void disp(){
+		System.out.println(x);
+	}
+	public static void main(String[] args) {	
+		System.out.println("y = "+y);
+		//System.out.println("x = "+x);
+		//x cannot exist without object
+		
+		MyFstJavaCode m=new MyFstJavaCode(); // x=10 y=50
+		m.disp();// 10
+		
+		System.out.println(y);
+	}
+}
+// instance var , class var , local var 
+
