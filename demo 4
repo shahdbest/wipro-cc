@@ -1,0 +1,18 @@
+
+public class MyFstJavaCode {
+	int x; 	
+	MyFstJavaCode(){
+		x=10;
+	}
+	
+	void disp(){
+		System.out.println(x);
+	}
+	public static void main(String[] args) {	
+		MyFstJavaCode m=new MyFstJavaCode(); // x=10
+		m.disp();// 10
+		
+	}
+}
+// instance var , class var , local var 
+
