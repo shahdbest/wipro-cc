@@ -1,0 +1,22 @@
+
+public class MyFstJavaCode {
+
+	//def value = 0
+	//int 32 bits 4 bytes
+	int x; // var is name given to memory
+	
+	
+	// instance var : an instance var is tied up with instance of a class
+	// appers to exist as long as the instance exist
+	
+	
+	public static void main(String[] args) {
+		//new 
+		
+		MyFstJavaCode m=new MyFstJavaCode(); 
+		System.out.println(m.x);
+	
+	}
+}
+// instance var , class var , local var 
+
