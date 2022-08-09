@@ -1,0 +1,51 @@
+
+public class MyFstJavaCode {
+			
+	public static void main(String[] args) {
+		
+		int x=10;
+		++x; // x+ 1
+		//x++ // x + 1
+		
+		System.out.println("x " +x);
+		
+		int y=10;
+		int z=y++; //` int z=y(10); 2 y=10+1;
+		
+		System.out.println("z "+ z);
+		System.out.println("y "+y);
+		
+		
+		
+		int y1=10;
+		int z1=++y1; //`  1 y=10+1 2 int z=y(11);;
+		
+		System.out.println("z1 "+ z1);
+		System.out.println("y1 "+y1);
+		
+		//------------------------
+		
+		int myvar=10;
+		
+		System.out.println(++myvar + 10 );
+		
+		
+		
+		System.out.println(myvar++ + 5 +myvar);
+		                 // 11 + 5 + 12
+
+		//System.out.println(myvar);
+		//25 // 27 // 28 // 26
+		
+		
+		
+	}
+	
+	
+}
+
+
+
+
+
+
