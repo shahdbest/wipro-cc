@@ -1,0 +1,23 @@
+
+public class MyFstJavaCode {
+			
+	public static void main(String[] args) {
+		
+		int x=10;
+		
+		if(++x > 10)
+			System.out.println("brain");
+		else
+			System.out.println("no brain");
+		
+		
+	}
+	
+	
+}
+
+
+
+
+
+
