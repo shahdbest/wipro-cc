@@ -1,0 +1,66 @@
+
+public class MyFstJavaCode {
+	
+	public static void main(String[] args) {
+
+	
+		String x="525";
+		int i=Integer.parseInt(x);
+		
+		System.out.println(i+1);
+		System.out.println(x+1);	
+		
+		//--------------------------
+		
+		String a="Hello";
+		int y=Integer.parseInt(a);
+		//number format exception .. which type casting ensure the type is compatible
+		
+		
+	}
+	
+	
+}
+
+
+// instance var , class var , local var 
+
+// 2
+// premitive (8)  --- class type
+
+//simple values
+
+// 8 bits ,16 bits, 32 bits , 64 bits
+// byte , short ,  int  ,   long
+//	32 bit   64 bit
+// float , double
+// char -> 16bits
+// boolean
+
+//-------------------------class type
+
+// class type- > objects including those which u create by urself 
+// class -> user Def data type 
+// Car , Dog , Calculator , String 
+
+
+//type casting -. conversion of data type from one type to another
+
+//-----------------------
+
+/* 		wrapper classes -> to manipulate simple value (premitive) as objects 
+ * byte    -- > Byte
+ * short   --> Short
+ * int   -> Integer
+ * long   -> Long
+ * float  -> Float
+ * double  -> Double
+ * char   ->Character
+ * boolean -> Boolean
+ */
+
+
+
+
+
+
