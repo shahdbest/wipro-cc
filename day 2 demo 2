@@ -1,0 +1,50 @@
+
+
+
+public class MyFstJavaCode {
+	
+	public static void main(String[] args) {
+
+			int a = 200;
+			byte b= (byte)a;
+			
+			
+			double a1=50.5;
+			float a2=(float)a1;
+			
+			System.out.println(a2);
+	
+			//by def compiler reads all decimal values as double
+			
+			float x=(float)10.5;
+			float y=10.5f;
+			
+			//both are same
+			
+	}
+	
+	
+}
+// instance var , class var , local var 
+
+// 2
+// premitive (8)  --- class type
+
+//simple values
+
+// 8 bits ,16 bits, 32 bits , 64 bits
+// byte , short ,  int  ,   long
+//	32 bit   64 bit
+// float , double
+// char
+// boolean
+
+//-------------------------class type
+
+// class type- > objects including those which u create by urself 
+// class -> user Def data type 
+// Car , Dog , Calculator , String 
+
+
+//type casting -. conversion of data type from one type to another
+
