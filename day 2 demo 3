@@ -1,0 +1,75 @@
+
+
+
+public class MyFstJavaCode {
+	
+	public static void main(String[] args) {
+
+			int a=10;
+			//a.
+		
+			String x="hello";
+			//x.
+
+			
+			//int b=50; //premitive
+			//String c=(String)b; //class
+	
+			//boxing , unboxing
+			
+			int b=50;
+			
+			Integer i=b;
+			String c=i.toString();
+			System.out.println(c);
+			//------------------
+			
+			String aa="100";
+			int bb=Integer.parseInt(aa);
+			
+			
+	}
+	
+	
+}
+// instance var , class var , local var 
+
+// 2
+// premitive (8)  --- class type
+
+//simple values
+
+// 8 bits ,16 bits, 32 bits , 64 bits
+// byte , short ,  int  ,   long
+//	32 bit   64 bit
+// float , double
+// char
+// boolean
+
+//-------------------------class type
+
+// class type- > objects including those which u create by urself 
+// class -> user Def data type 
+// Car , Dog , Calculator , String 
+
+
+//type casting -. conversion of data type from one type to another
+
+//-----------------------
+
+/* 		wrapper classes -> to manipulate simple value (premitive) as objects 
+ * byte    -- > Byte
+ * short   --> Short
+ * int   -> Integer
+ * long   -> Long
+ * float  -> Float
+ * double  -> Double
+ * char   ->Character
+ * boolean -> Boolean
+ */
+
+
+
+
+
+
