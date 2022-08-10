@@ -1,0 +1,20 @@
+public class MyFstJavaCode {
+	static int i=0;
+	public static void main(String[] args) {
+	
+    //1 ,2 ,3,4 , 5 
+		for(; i < 5 ;i++)
+		{
+			System.out.println("hello");
+		}
+		
+		System.out.println(i);
+		
+	}
+}
+
+
+
+
+
+
