@@ -1,0 +1,25 @@
+public class MyFstJavaCode {
+	public static void main(String[] args) {
+		int j=0;
+		
+		for(int i=0; i < 5 ;i++){
+			
+			for(j=0;j<2;j++)
+			{
+				if(i==2 && j==1)
+					break; //this always terminates inner loop 
+				
+				System.out.println(" i "+ i+ " j "+j);
+			}
+			
+		}
+		
+
+	}
+}
+
+
+
+
+
+
