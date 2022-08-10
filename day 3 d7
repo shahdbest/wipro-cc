@@ -1,0 +1,21 @@
+
+public class MyFstJavaCode {
+	
+	int x=555; //instance 
+	
+	static int y=666; //class 
+	
+	public static void main(String[] args) {
+	
+		System.out.println(y);
+		//System.out.println(x);
+		//cannot access instance var without instance of a class
+		
+	}
+}
+
+
+
+
+
+
