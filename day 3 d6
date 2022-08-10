@@ -1,0 +1,26 @@
+
+public class MyFstJavaCode {
+	
+	int x=555; //instance 
+	public void disp(){
+		System.out.println(this.x);
+	}
+	public void init(int var){
+		x=var;
+	}
+	
+	public static void main(String[] args) {
+		MyFstJavaCode m=new MyFstJavaCode();
+		MyFstJavaCode m1=new MyFstJavaCode();
+		
+		m.init(800);
+		m.disp();
+		m1.disp();
+	}
+}
+
+
+
+
+
+
