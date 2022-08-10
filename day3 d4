@@ -1,0 +1,22 @@
+
+public class MyFstJavaCode {
+	int x;
+	public void init()	{
+		x=100;
+	}
+	public void disp(){
+		System.out.println(x);	
+	}
+	public static void main(String[] args) {
+		
+		new MyFstJavaCode().init(); // obj 1 obj1.x=100
+		new MyFstJavaCode().disp();// obj 2  obj2.x
+		
+	}
+}
+
+
+
+
+
+
