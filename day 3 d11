@@ -1,0 +1,21 @@
+public class MyFstJavaCode {
+	public static void main(String[] args) {
+	
+		int ctr=0;
+		for(int i=0; i < 5 ;i++){
+			
+			for(int j=0; j < 2 ;j++){
+				System.out.println("hello i=  "+i+" j= "+j);	
+				ctr++;
+			}
+		}
+		
+		System.out.println(ctr);
+	}
+}
+
+
+
+
+
+
