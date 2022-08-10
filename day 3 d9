@@ -1,0 +1,25 @@
+
+
+class test{	
+	static int y=40;
+	int x=60;
+	
+}
+public class MyFstJavaCode {
+	
+	public static void main(String[] args) {
+		
+		System.out.println(test.y);
+		
+		//System.out.println(test.x);
+		
+		test t=new test();
+		System.out.println(t.x);
+			}
+}
+
+
+
+
+
+
