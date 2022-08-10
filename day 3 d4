@@ -1,0 +1,25 @@
+
+public class MyFstJavaCode {
+	
+	int x=555; //instance 
+	
+	public void disp(){
+		int x=50;
+		System.out.println(x);
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		MyFstJavaCode m=new MyFstJavaCode();
+		m.disp();// 50
+		
+		System.out.println("main  "+m.x); //555
+	}
+}
+
+
+
+
+
+
