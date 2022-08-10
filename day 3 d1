@@ -1,0 +1,28 @@
+
+public class MyFstJavaCode {
+	
+	int x;
+	
+	public void disp()
+	{
+		System.out.println(x);	
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		//System.out.println(x);	
+		//cannot access not static vars within a static block without an object ref
+
+		MyFstJavaCode m=new MyFstJavaCode();//instance vars r born
+		System.out.println(m.x);
+		m.disp();
+		
+	}
+}
+
+
+
+
+
+
