@@ -1,0 +1,29 @@
+
+public class MyFstJavaCode {
+	int x;
+	public void disp()
+	{
+		System.out.println(x);	
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		MyFstJavaCode m=new MyFstJavaCode();//instance vars r born
+		MyFstJavaCode m1=new MyFstJavaCode();//instance vars r born
+		
+		m.x=50;
+	
+		System.out.println(m.x);
+		System.out.println(m1.x);
+		
+//instance vars maintains seprate copy of data members		
+		
+	}
+}
+
+
+
+
+
+
