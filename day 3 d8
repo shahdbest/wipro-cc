@@ -1,0 +1,31 @@
+
+public class MyFstJavaCode {
+	
+	int x=555; //instance 	
+	static int y=666; //class 
+	// static vars maintain same copy for all instance
+	//static is born b4 object is created
+	
+	public static void main(String[] args) {
+		MyFstJavaCode m=new MyFstJavaCode();
+		MyFstJavaCode m1=new MyFstJavaCode();
+		
+		m.x=900;
+		m1.y=444;
+		m.y=888;
+		
+		System.out.println(m.x);
+		System.out.println(m1.x);
+		//----------------------------------------
+		
+		System.out.println(m.y);
+		System.out.println(m1.y);
+		
+	}
+}
+
+
+
+
+
+
