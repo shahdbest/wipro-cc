@@ -1,0 +1,36 @@
+
+
+public  class MyFstJavaCode {
+	//vararg must be the last arg in arg list
+	// a fun can have only one var arg that too at the end of arg list
+	//variable args
+	void sum(int... x )
+	{
+		int sum=0;
+		for(int i=0;i<x.length;i++)
+		{
+			sum=sum+x[i];
+		}
+		
+		System.out.println(y);
+		System.out.println("sum = "+sum);
+	}
+	
+	public static void main(String[] args) {
+			
+		MyFstJavaCode m=new MyFstJavaCode();
+		
+		//m.sum();
+		//m.sum(10);
+		m.sum(5,8,5,4);
+	}
+}
+
+
+
+
+
+
+
+
+
