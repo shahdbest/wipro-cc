@@ -1,0 +1,47 @@
+
+
+public  class MyFstJavaCode {
+	//when function perform closely related task we give them the same name
+	// that is called as overloading
+	
+	// no of args ,
+	//or type args 
+	//or sequence of arg must be different 
+	
+	void add(int x,int y){
+	System.out.println("int,int");
+		System.out.println(x+y);
+	}
+	
+
+	void add(int x,int y,int z){
+		System.out.println("int,int,int");
+		System.out.println(x+y+z);
+	}
+	void add(char x,int y){
+		System.out.println("char,int");
+		System.out.println(x+y);
+	}
+	void add(int y,char x){
+		System.out.println("int,char");
+		System.out.println(x+y);
+	}
+	
+	public static void main(String[] args) {
+			
+		MyFstJavaCode m=new MyFstJavaCode();
+		m.add('0',10);
+		m.add(2,10);
+		m.add(10,'5');
+		
+	}
+}
+
+
+
+
+
+
+
+
+
