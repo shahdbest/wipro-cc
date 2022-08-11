@@ -1,0 +1,133 @@
+package com.myapp.demo;
+
+public class ClassA {
+
+	public static int classAVar=50;
+	private static int classAPrivateVar=50;
+	protected static int classAPrtectedVar=50;
+	static int classADefaultVar=50;
+	static class testing{
+		
+		static void aa()
+		{
+			System.out.println(classAPrivateVar);
+
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(classAPrivateVar);
+	}
+}
+
+class testing
+{
+
+	public static void main(String[] args) {
+		//System.out.println(classAPrivateVar);
+	}
+}
+/*
+ * 
+ * public -> everyone
+ * protected -> child class + same package
+ * default -> package members only
+ *private -> with the same class
+ */
+//package : collection of related classes 
+
+
+-------------------------------------------------------------------------------classB
+
+package com.myapp.demo;
+
+public class ClassB {
+
+	public static void main(String[] args) {
+		
+		System.out.println(ClassA.classAVar);
+		
+		//System.out.println(ClassA.classAPrivateVar);
+		//cannot access private outside the class
+		
+		System.out.println(ClassA.classAPrtectedVar);
+		System.out.println(ClassA.classADefaultVar);
+		
+		
+	}
+}
+
+
+---------------------------------------------------------class D
+
+package com.myapp.test;
+
+import com.myapp.demo.ClassA;
+
+
+public class ClassD {
+
+public static void main(String[] args) {
+		
+		//System.out.println(com.myapp.demo.ClassA.classAVar);
+		//System.out.println(com.myapp.demo.ClassA.classAVar);
+	
+		System.out.println(ClassA.classAVar);
+		//System.out.println(ClassA.classAPrtectedVar);
+		//cannot access protected outside the package 
+		//if class is not the child
+
+
+		//System.out.println(ClassA.classADefaultVar);
+		//cannot access default outside the package 
+}
+}
+
+
+------------------------------------------class E 
+
+package com.myapp.test;
+
+import com.myapp.demo.ClassA;
+
+public class ClassE extends ClassA{
+	
+	public static void main(String[] args) {
+		System.out.println(ClassA.classAPrtectedVar);
+		//System.out.println(ClassA.classADefaultVar);
+		//cannot access def var even if the child is outside the package
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
