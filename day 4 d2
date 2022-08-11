@@ -1,0 +1,50 @@
+
+package com.myapp.demo;
+
+public class ClassA {
+
+
+	
+	public static int classAStaticVar=500; //class var
+	public  int classANonStaticVar=500; //instance var
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+------------------------------------------------------
+
+
+
+package com.myapp.test;
+
+import static com.myapp.demo.ClassA.classAStaticVar;
+//only classsAStatic var will be imported
+
+import com.myapp.demo.ClassA;
+//this will import class A
+
+
+public class ClassD {
+
+public static void main(String[] args) {
+
+	System.out.println(classAStaticVar);
+	
+	ClassA c=new ClassA();
+	System.out.println(c.classANonStaticVar);
+	
+	
+}
+
+}
+
+
+
+
+
+
