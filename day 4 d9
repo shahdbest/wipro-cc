@@ -1,0 +1,31 @@
+
+
+public  class MyFstJavaCode {
+	
+	//variable args
+	void sum(int... x)
+	{
+		System.out.println(x.length);
+		System.out.println(x[0]);
+		
+		System.out.println("sum function called");
+	}
+	
+	public static void main(String[] args) {
+			
+		MyFstJavaCode m=new MyFstJavaCode();
+		
+		//m.sum();
+		m.sum(10);
+		m.sum(5,8,9,6,3,5,4,7);
+	}
+}
+
+
+
+
+
+
+
+
+
