@@ -1,0 +1,38 @@
+
+
+public  class MyFstJavaCode {
+	String colour;
+	//overloading -> static polymorphism 
+	MyFstJavaCode(){
+		colour="red";
+	}
+	
+	MyFstJavaCode(String colour){
+		this.colour=colour;
+	}
+	
+	void painting(){
+		System.out.println("i am painting with colour "+colour);
+	}
+	
+	public static void main(String[] args) {
+	MyFstJavaCode m=new MyFstJavaCode();
+	m.painting();
+	
+	
+	MyFstJavaCode m1=new MyFstJavaCode("green");
+	m1.painting();
+	
+		
+		
+	}
+}
+
+
+
+
+
+
+
+
+
