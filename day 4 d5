@@ -1,0 +1,64 @@
+package com.myapp.demo;
+
+public class ClassA {
+
+
+	
+	public static int classAStaticVar=500; //class var
+	public  int classANonStaticVar=500; //instance var
+	
+	
+	public static void  outside()
+	{
+		System.out.println("this is staic fun from class A");
+	}
+	
+	public static void main(String[] args) {
+		
+		//outside();
+	}
+}
+
+
+------------------------------
+
+package com.myapp.test;
+
+import static com.myapp.demo.ClassA.classAStaticVar;
+//only classsAStatic var will be imported
+
+
+import com.myapp.demo.ClassA;
+//this will import class A
+
+
+public class ClassD {
+
+	static String classAStaticVar="var of this class";
+	
+void disp(){
+	System.out.println("DISP FUN "+classAStaticVar);
+	
+}
+	
+	
+public static void main(String[] args) {
+
+	System.out.println(ClassA.classAStaticVar);
+	new ClassD().disp();
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
