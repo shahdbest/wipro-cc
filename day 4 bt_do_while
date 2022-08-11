@@ -1,0 +1,92 @@
+package com.stackroute.basics;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.util.Scanner;
+
+
+public class Palindrome {
+
+    public static void main(String[] args) {
+        new Palindrome().getValue();
+  
+    }
+
+    // get values from the user using scanner
+    public void getValue() {
+
+    	Scanner sc=new Scanner(System.in);
+    	String str= sc.nextLine();
+    	inputValidator(str);
+    	
+    	
+       	}
+       	
+     
+
+    // validate the input using inputValidator and print the error message or the result from palindromeValidator
+    public void outputPrinter(String number) {
+
+    		
+    }
+    // check whether the input is a valid integer and return boolean
+    public boolean inputValidator(String number) {
+    	
+    	if(number.isBlank()||number.isEmpty())
+    	{
+    		 System.out.println("Wrong input, give proper positive integer");
+			 return false;
+		
+    	}
+    	else
+    	{
+   	 try {
+   				  
+			 BigInteger bi=new BigInteger(number);
+			 if(bi.compareTo(BigInteger.ZERO) < 0  )
+			 {
+				 System.out.println("Wrong input, give proper positive integer");
+				 return false;
+			 }
+			 else {
+				String res= palindromeValidator(bi);
+				System.out.println(res);
+				
+			 	}
+				 return true;
+		 }
+		 catch (Exception e) {
+			 System.out.println("Wrong input, give proper positive integer");
+			return false; 
+		 }
+      	
+    	}
+    }
+
+
+    // write logic to check for palindrome using BigInteger & Do-while
+    public String palindromeValidator(BigInteger number) {
+    	
+    	
+    	
+    	if(number.compareTo(BigInteger.ZERO) < 0  )
+    	{
+    		return "The integer have to be at least a two digit positive integer";
+    	}	
+    	if(number.compareTo(BigInteger.TEN)<0)
+    	{
+    	return "The integer have to be at least a two digit positive integer";	
+    	}
+    	
+    	StringBuilder b=new StringBuilder(number.toString()).reverse();
+    	StringBuilder b1=new StringBuilder(number.toString());
+
+    	if(b.toString().equals(b1.toString()))
+    	return number+" is a palindrome";
+    	
+    	else
+    		return number+" is not a palindrome";
+    		
+    	
+    }
+}
