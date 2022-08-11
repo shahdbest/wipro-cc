@@ -1,0 +1,36 @@
+
+//classes can be at 2 levels public and default-> outer classes
+//impossible to create object without constructor -> true
+//if we dont create a constructor in our class by def compiler creats a constructor
+//def const created by compiler has same access as class 
+//def const created by compiler can never have args
+//if we create const compiler wont create a cont
+
+public  class MyFstJavaCode {
+	
+//	private static class test
+//	{
+//		
+//	}
+	
+	void disp()
+	{
+		System.out.println("disp fun");
+	}
+	
+	public static void main(String[] args) {
+	
+		MyFstJavaCode myFstJavaCode=new MyFstJavaCode();
+	
+		new MyFstJavaCode().disp();
+	}
+}
+
+
+
+
+
+
+
+
+
