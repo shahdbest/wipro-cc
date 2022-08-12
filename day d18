@@ -1,0 +1,121 @@
+
+//only abstract calss can contain abstract method
+// child must override abstract methods of parent else child should be declared as abstract
+//Cannot instantiate the abstract class
+//abstract class can have 0 or more abstract methods
+//abstract method cannot be private
+//abstract method cannot be final
+//abstract method cannot be static
+
+
+
+abstract class PlanConstruction{
+	 void rooms()	{
+		System.out.println("7 rooms");
+	}
+	
+	 void sp(){
+		System.out.println("a swimming pool");
+	}
+	 void grdn(){
+		System.out.println("a garden");
+	}
+  abstract void location();
+}
+
+
+class Builder
+{
+
+	void build(PlanConstruction construction)
+	{
+		construction.location();
+		construction.grdn();
+		construction.sp();
+		construction.rooms();
+	}
+
+}
+
+
+public class Day5 {
+	
+	public static void main(String[] args) {
+		
+		
+		//PlanConstruction p=new PlanConstruction();		
+		//Cannot instantiate the type PlanConstruction coz its abstract
+		
+		FriendA frienda=new FriendA();
+	
+		
+		FriendB friendb=new FriendB();
+	
+		Builder builder=new Builder();
+		
+		builder.build(frienda);
+		System.out.println("--------");
+		builder.build(friendb);
+	
+	System.out.println("------");
+	
+	FriendC c=new FriendC();
+	builder.build(c);
+	
+	}
+}
+
+
+class FriendA extends PlanConstruction
+{
+
+	@Override
+	void location() {
+	System.out.println("7 rooms at top of building 1st floor swimming pool garden at ground floor");		
+	}
+	
+
+}
+
+
+class FriendB extends PlanConstruction
+{
+
+	@Override
+	void location() {
+	System.out.println("swimming at top of building 1st floor rooms n garden at ground floor");		
+	}
+	
+
+}
+
+
+
+class FriendC extends PlanConstruction
+{
+	
+
+	@Override
+	void rooms() {
+	System.out.println("5 rooms");
+	}
+
+	@Override
+	void location() {
+	System.out.println("swimming at top of building 1st floor rooms n garden at ground floor");		
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
