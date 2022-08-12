@@ -1,0 +1,34 @@
+// modifyng d bhvr of parent -> overriding
+
+//type of arg
+//num of arg
+//seq of arg
+// return type
+
+//must be same 
+
+class calc{
+	 void add(int x){
+		System.out.println("parent version of add meth");
+	}		
+	 
+	 void b(){
+		 System.out.println("b meth");
+	 }
+}
+// mc graw hills ocjp kit
+class SciCalc extends calc{
+	//@Override 
+	void add(int y){
+		System.out.println("child version of add meth");	
+	}
+}
+
+public class Day5 {
+	public static void main(String[] args) {
+		SciCalc sc=new SciCalc();
+		sc.add(10); // 10 is int
+		//sc.add(10L);//10 is long
+		//sc.b();
+	}
+}
