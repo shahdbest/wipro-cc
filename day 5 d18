@@ -1,0 +1,70 @@
+
+
+// when non related classes share the common behiavour we use interfaces
+
+//all interface methods r abstract by def
+
+// interface are used to set some standard or protocols 
+
+interface Flayer
+{
+
+	void fly();
+	
+	
+}
+
+
+class ShaktiMaan
+{
+	public void fly() {
+		System.out.println("shaktimaan fly");
+	}	
+}
+
+class Parrot implements Flayer
+{
+	@Override
+	public void fly() {
+		System.out.println("parrot fly");
+	}
+	
+}
+
+class SuperMan implements Flayer
+{
+	@Override
+	public void fly() {
+		// TODO Auto-generated method stub
+		System.out.println("superman fly");	}
+}
+
+class AirCraft implements Flayer
+{
+	@Override
+	public void fly() {
+		System.out.println("Aircraft fly");
+	}
+}
+
+
+
+public class Day5 {
+	
+	public static void main(String[] args) {
+		
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
