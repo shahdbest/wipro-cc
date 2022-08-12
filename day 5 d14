@@ -1,0 +1,66 @@
+
+abstract class Animal{
+	abstract void move();
+}
+
+
+class Mover{
+	void moveAnimal(Animal animal)
+	{
+		animal.move();
+	}
+
+}
+
+
+public class Day5 {
+	
+	public static void main(String[] args) {
+		
+		
+		Animal animal1=new Tiger();
+		
+		Mover mover1=new Mover();
+		mover1.moveAnimal(animal1);
+		
+		///
+		
+		Animal animal2=new Monkey();
+		
+		Mover mover2=new Mover();
+		mover2.moveAnimal(animal2);
+		
+		
+		
+		
+	}
+}
+
+
+
+class Tiger extends Animal
+{
+
+	@Override
+	void move() {
+	
+		System.out.println("Tiger moves");
+	}
+
+}
+
+class Monkey extends Animal
+{
+
+	@Override
+	void move() {
+	
+		System.out.println("Monkey moves");
+	}
+
+}
+
+
+
+
+
