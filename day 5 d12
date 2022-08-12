@@ -1,0 +1,35 @@
+
+class Animal{
+	void move(){
+		System.out.println("animal move");
+	}
+	void eat(){
+		System.out.println("animal eats grass");
+	}
+}
+
+class Tiger extends Animal{
+	@Override
+	void eat(){
+		System.out.println("tiger eats meat");
+	}
+	
+	void roar(){
+		System.out.println("tiger roars");
+	}
+}
+public class Day5 {
+	
+	public static void main(String[] args) {
+	
+		Animal animal=new Tiger();
+		animal.eat();
+		animal.move();
+		//animal.roar();
+		//error only the methods belonging to parent will be called 
+		//
+		
+//		Tiger t1=new Tiger();
+	//	t1.roar();
+	}
+}
