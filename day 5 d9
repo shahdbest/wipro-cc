@@ -1,0 +1,29 @@
+
+
+public class Day5 {
+	
+final int z;
+
+	Day5()
+	{
+		z=5;
+		
+	}
+
+	public static void main(String[] args) {
+		
+		final int x=50;
+		
+		System.out.println(x+10);
+		
+		//x=70;
+		//the final local variable x cannot be assigned.
+		
+		
+		final int y; // do local var have def value ??		
+		y=80;
+		
+	//	y=90;
+		//the final local variable x cannot be assigned.
+	}
+}
