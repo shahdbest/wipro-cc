@@ -1,0 +1,62 @@
+// modifyng d bhvr of parent -> overriding
+
+//type of arg
+//num of arg
+//seq of arg
+// return type
+
+//must be same 
+
+class calc{
+	
+	private void add(){
+		System.out.println("parent version of add meth");
+	}
+	void sub(){
+		System.out.println("add sub");
+	}
+	void mul(){
+		System.out.println("add mul");
+	}
+	void div(){
+		System.out.println("add div");
+	}
+	
+}
+
+
+class SciCalc extends calc
+{
+
+	//@Override //to ensure below meth is ovrrdn meth
+	void add(){
+		System.out.println("child version of add meth");
+		
+	}
+
+	
+	void sin(){
+		System.out.println(" sin");
+	}
+	void cos(){
+		System.out.println(" cos");
+	}
+	void tan(){
+		System.out.println(" tan");
+	}
+
+}
+
+
+public class Day5 {
+
+	public static void main(String[] args) {
+		
+
+		SciCalc sc=new SciCalc();
+		sc.cos();
+		sc.add();
+		
+	}
+
+}
