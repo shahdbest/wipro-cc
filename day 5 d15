@@ -1,0 +1,78 @@
+
+//only abstract calss can contain abstract method
+
+abstract class PlanConstruction{
+	void rooms()	{
+		System.out.println("7 rooms");
+	}
+	
+	void sp(){
+		System.out.println("a swimming pool");
+	}
+	void grdn(){
+		System.out.println("a garden");
+	}
+	abstract void location();
+}
+
+public class Day5 {
+	
+	public static void main(String[] args) {
+		
+		
+		//PlanConstruction p=new PlanConstruction();		
+		//Cannot instantiate the type PlanConstruction coz its abstract
+		
+		FriendA building=new FriendA();
+		building.location();
+		building.rooms();
+		building.sp();
+	
+		
+		FriendB building1=new FriendB();
+		building1.location();
+		building1.rooms();
+		building1.sp();
+	
+	}
+}
+
+
+class FriendA extends PlanConstruction
+{
+
+	@Override
+	void location() {
+	System.out.println("7 rooms at top of building 1st floor swimming pool garden at ground floor");		
+	}
+	
+
+}
+
+
+class FriendB extends PlanConstruction
+{
+
+	@Override
+	void location() {
+	System.out.println("swimming at top of building 1st floor rooms n garden at ground floor");		
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
