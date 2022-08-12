@@ -1,0 +1,80 @@
+
+
+abstract class Country 
+{
+
+	abstract void phoneNumberFormat();
+	
+}
+
+class India extends Country
+{
+
+	@Override
+	public void phoneNumberFormat() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+
+
+//---------------------------------------------- 2 
+
+interface NumberFormat{
+	abstract void phoneNumberFormat();
+	
+}
+
+abstract class Country2 implements NumberFormat
+{
+}
+
+class India2 extends Country2
+{
+
+	@Override
+	public void phoneNumberFormat() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+class Karnataka implements NumberFormat
+{
+
+	@Override
+	public void phoneNumberFormat() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+
+
+
+
+
+
+
+public class Day5 {
+	
+	public static void main(String[] args) {
+		
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
