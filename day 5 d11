@@ -1,0 +1,21 @@
+//class cannot be extended
+final class test
+{
+	
+}
+//The type testing cannot subclass the final class test
+class testing extends test
+{
+	
+}
+
+
+
+
+public class Day5 {
+	
+
+	public static void main(String[] args) {
+		
+	}
+}
