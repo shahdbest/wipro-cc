@@ -1,0 +1,48 @@
+
+
+class calc{
+	
+	void add(){
+		System.out.println("add meth");
+	}
+	void sub(){
+		System.out.println("add sub");
+	}
+	void mul(){
+		System.out.println("add mul");
+	}
+	void div(){
+		System.out.println("add div");
+	}
+	
+}
+
+
+class SciCalc extends calc
+{
+	
+	void sin(){
+		System.out.println(" sin");
+	}
+	void cos(){
+		System.out.println(" cos");
+	}
+	void tan(){
+		System.out.println(" tan");
+	}
+
+}
+
+
+public class Day5 {
+
+	public static void main(String[] args) {
+		
+
+		SciCalc sc=new SciCalc();
+		sc.cos();
+		sc.add();
+		
+	}
+
+}
