@@ -1,0 +1,33 @@
+
+
+public class Day5 {
+	
+final int TEST_MY_VAR;
+
+	Day5()
+	{
+		TEST_MY_VAR=5;
+		
+			int x=Thread.NORM_PRIORITY;
+			//Thread.MAX_PRIORITY=5;
+System.out.println("max p "+x);
+	}
+
+	public static void main(String[] args) {
+		
+		new Day5();
+		final int x=50;
+		
+		System.out.println(x+10);
+		
+		//x=70;
+		//the final local variable x cannot be assigned.
+		
+		
+		final int y; // do local var have def value ??		
+		y=80;
+		
+	//	y=90;
+		//the final local variable x cannot be assigned.
+	}
+}
