@@ -1,0 +1,35 @@
+// modifyng d bhvr of parent -> overriding
+
+//type of arg
+//num of arg
+//seq of arg
+// return type
+
+
+//Cannot reduce the visibility of the inherited method 
+
+// public    
+//protected
+//default
+//private
+
+//must be same 
+
+class calc{
+	 protected void add(int x){
+		System.out.println("parent version of add meth");
+	}		 
+}
+class SciCalc extends calc{
+	@Override 
+	public void add(int y){
+		System.out.println("child version of add meth");	
+	}
+}
+
+public class Day5 {
+	public static void main(String[] args) {
+		SciCalc sc=new SciCalc();
+		sc.add(10);
+	}
+}
