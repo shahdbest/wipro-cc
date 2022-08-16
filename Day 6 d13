@@ -1,0 +1,35 @@
+
+public class Day6Demos {
+
+	
+	
+	public static void main(String[] args) {
+	
+
+		System.out.println("lines b4 exception");
+		
+		System.out.println("line 1");
+		System.out.println("line 2");
+		try {
+		System.out.println(10/0);		
+		}
+		catch (ArithmeticException e) {
+			System.out.println("Number cannot be div by zero which school ?");
+		}
+		System.out.println("line after exception");
+		
+	}
+
+}
+
+// exception : abnormal condition occurs during program execution
+//and terminates the flow of program
+
+//exception handling : protects d program frm being terminated
+//try , catch , finally , throw , throws 
+
+
+
+
+
+
