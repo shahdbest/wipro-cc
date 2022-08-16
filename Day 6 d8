@@ -1,0 +1,17 @@
+
+public class Day6Demos {
+
+	
+	
+	public static void main(String[] args) {
+	
+		int[] x=new int[] {5,8,6,9,5,44,65};
+		
+		for(int a:x)
+		{
+			System.out.println(a);
+		}
+	
+	}
+
+}
