@@ -1,0 +1,53 @@
+
+public class Day6Demos {
+
+	int test()
+	{
+
+		try {
+			System.out.println(10/0);
+			System.out.println("try block");
+
+			//System.exit(0);
+		return 1;	
+		
+		}
+		catch (Exception e) {
+		
+			System.out.println("catch block");
+			//System.exit(0);
+			return -1;
+		}
+		
+		finally {
+			System.out.println("finally.. close conn or resou");
+				
+		}
+		//System.out.println("line without finally.. close conn or resou");
+		
+
+		
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		
+		int res = new Day6Demos().test();
+		
+		System.out.println(res);
+	}
+
+}
+
+// exception : abnormal condition occurs during program execution
+//and terminates the flow of program
+
+//exception handling : protects d program frm being terminated
+//try , catch , finally , throw , throws 
+
+
+
+
+
+
