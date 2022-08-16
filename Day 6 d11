@@ -1,0 +1,34 @@
+
+public class Day6Demos {
+
+	
+	String myReplace(String str, char find ,char replace)
+	{
+		char[] ar= str.toCharArray();
+		
+		for(int i=0;i<ar.length;i++)
+			
+		{
+			if(ar[i]==find)
+			ar[i]=replace;
+		}
+			
+		return new String(ar);
+	}
+
+	
+	public static void main(String[] args) {
+	
+	String res=	new Day6Demos().myReplace("Hello", 'e', 'o');
+	
+	System.out.println(res);
+	System.out.println(new Day6Demos().myReplace("Hello", 'H', 'K'));
+	
+	}
+
+}
+
+//myReplace(str, find , replace)
+
+//Hello , l , k
+//Hekko -> output
