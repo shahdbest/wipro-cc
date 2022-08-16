@@ -1,0 +1,30 @@
+
+public class Student {
+
+	int rollNo;
+	String name;
+	int marks;
+}
+
+
+-------------------------------
+
+
+
+public class Day6Demos {
+
+	public static void main(String[] args) {
+
+		
+		Student student=new Student();
+		student.rollNo=10;
+		student.marks=501;
+		student.name="Raju";
+		
+		System.out.println(student.name);
+		System.out.println(student.marks);
+		System.out.println(student.rollNo);
+		
+	}
+
+}
