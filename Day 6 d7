@@ -1,0 +1,28 @@
+
+public class Day6Demos {
+
+	
+	
+	public static void main(String[] args) {
+		
+//		int[] marks=new int[5];
+//		System.out.println("old size "+marks.length);
+//		
+//		marks=new int[10];
+//		System.out.println("new size "+marks.length);
+//		
+		
+	
+		int[] marks= {10,55,26,29,28};
+		
+		System.out.println("old val "+marks[3]);
+	
+		marks=new int[10];
+		System.out.println("new val "+marks[3]);
+		
+	//arrays cannot be resized
+		//but same ref var can be used to refer to entirely new array
+		//in which case the previous data will be lost
+	}
+
+}
