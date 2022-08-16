@@ -1,0 +1,32 @@
+
+public class Day6Demos {
+
+	
+	int[] rno; //instance var def val null
+	
+	//int x;//def val= 0;
+	
+	//String y;//def val null  
+	
+	public static void main(String[] args) {
+		
+		int[] marks=new int[50];
+		
+	//System.out.println(marks.length);
+	System.out.println(marks[49]);
+	
+		//System.out.println(rno[2]);
+		
+		
+		Day6Demos d=new Day6Demos();
+		//System.out.println(d.rno[2]);
+		//null pointer
+		
+		//System.out.println(marks[49]);
+		//array index 
+		
+	//Integer i;
+	//System.out.println(i);
+	}
+
+}
