@@ -1,0 +1,67 @@
+
+
+
+interface NumberFormat{
+	 void phoneNumberFormat();
+	
+}
+
+interface childInter extends NumberFormat
+{
+	void test();
+}
+
+//if u implement from a child interface u must override all methods of child and parent interface
+class MyInterTest implements childInter
+{
+	@Override
+	public void phoneNumberFormat() {
+	}
+
+	@Override
+	public void test() {
+	}
+	
+}
+
+
+
+
+//all inetrface vars are public  static and final
+
+class India implements NumberFormat{
+	
+	// void phoneNumberFormat() {}
+	//all interface methods are public by def
+	
+	@Override
+	public void phoneNumberFormat() {	
+	}
+	
+	
+}
+
+// package is collection of related classes
+
+//interface : non related classes can share comn bhvr
+
+
+public class Day5 {
+	
+	public static void main(String[] args) {
+		
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
