@@ -1,0 +1,28 @@
+
+public class Day6Demos {
+
+	public int capsCount(String str)
+	{
+		char[] ar=str.toCharArray();
+		
+		int ctr=0;
+		for(char a:ar)
+		{
+			if(a>=65 && a <=90)
+				ctr++;
+		}
+		
+		return ctr++;
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		String x="HeLLo WorlD";
+		
+	
+		int ctr= new Day6Demos().capsCount(x);
+		System.out.println("no of cap chars in given str are "+ctr);
+	}
+
+}
