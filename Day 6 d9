@@ -1,0 +1,25 @@
+
+public class Day6Demos {
+
+	public int capsCount(String str)
+	{
+		char[] ar=str.toCharArray();
+		
+		for(char a:ar)
+		{
+			System.out.println(a);
+		}
+		
+		return 0;
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		String x="HeLlo";
+		
+	
+		new Day6Demos().capsCount(x);
+	}
+
+}
