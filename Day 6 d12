@@ -1,0 +1,37 @@
+
+public class Day6Demos {
+
+	
+	String myTitleCase(String str)
+	{
+		
+		str =str.toLowerCase();
+		
+		String ar[]= str.split(" ");
+		
+	
+		for(String a:ar)
+		{
+		
+			char[] arr=a.toCharArray();
+			arr[0]=(char)(arr[0]-32);
+			
+			String strConv=new String(arr);
+			System.out.println(strConv);
+		}	
+		return "";
+	}
+
+	
+	public static void main(String[] args) {
+	
+	
+	
+		System.out.println(new Day6Demos().myTitleCase("Hello world welcome to java coding testing brain"));
+	
+	}
+
+}
+
+
+
