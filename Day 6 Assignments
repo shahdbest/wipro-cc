@@ -1,0 +1,85 @@
+
+-> create a replace function in a way where it replaces only the first found char
+//myReplaceFirst(str, find , replace)
+
+//Hello , l , k
+//Heklo -> output
+
+
+
+
+
+-> create a function to reverse the given string
+//myReverse(str)
+
+//Hello 
+//olleH -> output
+
+
+
+
+-> create a replace function in a way where it replaces only the last found char
+//myReplaceLast(str, find , replace)
+
+//Hello , l , k
+//Helko -> output
+
+
+
+
+-> create a  function to convert a given string into its lower case and return the lowercase string
+//myToLower(str)
+
+//Hello
+//hello -> output
+
+
+
+
+
+-> create a  function to convert a given string into its upper case and return the uppercase string
+//myToUpper(str)
+
+//Hello
+//HELLO -> output
+
+
+-> create a  function to convert a given string into its title case and return the title case string
+//myToTitleCase(str)
+
+//hello world welcome to java 
+//HELLO -> Hello World Welcome To Java
+
+first char of each wrod to be converted into caps
+
+
+//heLLo world welcome to java 
+//HELLO -> Hello World Welcome To Java
+
+first char of each wrod to be converted into caps and rest all should be small
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
