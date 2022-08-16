@@ -1,0 +1,40 @@
+
+public class Day6Demos {
+
+	
+	
+	public static void main(String[] args) {
+	
+	
+		try {
+		//System.out.println(10/2);
+			System.out.println(10/0);
+		System.out.println("try block");
+			
+		}
+		catch (Exception e) {
+		
+			System.out.println("catch block");
+		}
+		finally {
+			System.out.println("finally block");
+		}
+		// gets executed even if prog is terminated 
+		
+			System.out.println("line without finally.. close conn or resou");
+		
+	}
+
+}
+
+// exception : abnormal condition occurs during program execution
+//and terminates the flow of program
+
+//exception handling : protects d program frm being terminated
+//try , catch , finally , throw , throws 
+
+
+
+
+
+
