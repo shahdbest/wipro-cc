@@ -1,0 +1,69 @@
+
+public class Student {
+
+	private int rollNo;
+	private String name;
+	private int marks;
+	public int getRollNo() {
+		return rollNo;
+	}
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getMarks() {
+		
+		return marks;
+	
+	}
+	public void setMarks(int marks) {
+		
+		if(marks>=0 && marks <=100)
+		this.marks = marks;
+		else
+		throw new IllegalArgumentException();
+	}
+
+		
+
+}
+
+
+
+-------------------------------------------------------------
+public class Day6Demos {
+
+	public static void main(String[] args) {
+
+		
+		Student student=new Student();
+		student.setRollNo(10);
+		student.setMarks(80);
+		student.setName("John");
+		
+		System.out.println(student.getName());
+		System.out.println(student.getMarks());
+		System.out.println(student.getRollNo());
+		
+		Thread t1=new Thread();
+		
+		//max-10
+		//min-1
+		//norm-5
+		// 1 - 10 is valid thrd Priority 
+		//t1.setPriority(0);
+		//Exception in thread "main" java.lang.IllegalArgumentException
+
+		
+	}
+
+}
+
+
+
+
