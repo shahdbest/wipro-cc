@@ -1,0 +1,51 @@
+import java.util.ArrayList;
+import java.util.Vector;
+
+
+//ArrayList : Thread Unsafe (unsynchronized) -> fast 
+
+//Vector: Thread Safe -> synchronized -> slow
+
+public class Day6Demos {
+
+	public static void main(String[] args) {
+	
+		//collections works only with Objects
+		ArrayList<Integer> test=new ArrayList<>();
+		
+		
+		Integer i=10;
+		test.add(i);
+		
+		int x=11;
+		test.add(x);
+		//auto boxing
+		
+		test.add(15);
+		
+		test.add(12);
+		test.add(11);
+
+		test.add(2, 900);
+		System.out.println(test);
+	
+	System.out.println("-----------------");
+	
+	
+	//test.remove(900); exception 900 is considered as inx not as value
+	//int val=900;
+	
+	
+	Integer val=900;
+	test.remove(val);
+	
+	System.out.println(test);
+	
+	}
+}
+
+
+//list -> ordered , contains duplicates
+
+
+
