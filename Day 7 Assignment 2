@@ -1,0 +1,63 @@
+--> create a model Player
+ --> playerName
+ --> playerId
+ ---> team
+ --> noOfMathes
+ -->noOfruns
+ -->noOfwickets
+ 
+ 
+ ----------------------->
+ 
+ create list players with 10 players in it
+ 
+ //sort it based on 
+ --- Name
+ --- team
+ ----no of run  --> heighest to lowest
+ -- no of wickets
+ --no of matches
+ 
+ 
+ 
+ display the player list with any sorting given by the user 
+ 
+ ---> plz choose the ategory on which u want to sort the players 
+ 
+  --> 1 for no of matches
+  --> 2 for no of run 
+  --> 3 for no of wickets
+  ---> 4 for name
+  -> 5 for team 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
