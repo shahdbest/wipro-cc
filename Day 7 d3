@@ -1,0 +1,49 @@
+
+class InvalidMarksExeption extends Exception{
+	
+
+	InvalidMarksExeption(String message)
+	{
+		super(message);// parent class const with arg is called here
+	}
+}
+
+
+class EnterMarks{
+	EnterMarks(int marks)throws InvalidMarksExeption
+	{
+		if(marks < 0 || marks > 100)
+			throw new InvalidMarksExeption("ye kya marks hain ??");
+		
+	}
+	
+}
+
+
+
+public class Day6Demos {
+
+	public static void main(String[] args) {
+	
+	try {
+		EnterMarks e=new EnterMarks(-40);
+	} catch (InvalidMarksExeption e) {
+		e.printStackTrace();
+	}
+	System.out.println("DONE");
+		
+	}
+
+}
+
+// exception : abnormal condition occurs during program execution
+//and terminates the flow of program
+
+//exception handling : protects d program frm being terminated
+//try , catch , finally , throw , throws 
+
+
+
+
+
+
