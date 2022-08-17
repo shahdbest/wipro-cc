@@ -1,0 +1,46 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Day6Demos {
+
+			//throws redirects the exception to the caller 
+	void test() throws FileNotFoundException{
+		
+		throw new FileNotFoundException();
+		//throw is used to raise an exception
+	}
+		
+	void test(int x) throws FileNotFoundException
+	{
+		test();
+	
+		//new FileOutputStream("test.txt");
+	
+	}
+	
+	
+	public static void main(String[] args) throws FileNotFoundException {
+	
+		Day6Demos d=new Day6Demos();
+		d.test(55);
+	//try to write test function under try n catch n remove throws from main
+		
+		System.out.println("line after test");
+		
+	
+	}
+
+}
+
+// exception : abnormal condition occurs during program execution
+//and terminates the flow of program
+
+//exception handling : protects d program frm being terminated
+//try , catch , finally , throw , throws 
+
+
+
+
+
+
