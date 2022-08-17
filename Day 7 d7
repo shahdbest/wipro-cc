@@ -1,0 +1,36 @@
+
+
+
+// child inherits everthing frm parent except private and constructor
+
+class parent{
+	
+	
+	public parent(int x) {
+		System.out.println("parent const "+x);
+		}
+}
+
+class child extends parent{
+
+	public child() {
+		//super(); calls the def const of parent 
+		super(50);
+		System.out.println("child const");
+		
+	}
+	
+	}
+
+public class Day6Demos {
+	public static void main(String[] args) {
+		child c=new child();
+	
+}
+}
+
+
+
+
+
+
