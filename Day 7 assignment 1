@@ -1,0 +1,23 @@
+
+-> create a custom exception called Tickets not available 
+
+
+-> which should be thrown when users book the ticket and noOftickets go below zero 
+-> noOfTickets=10
+
+
+-> bookMyTicket(int nooftickets)
+
+
+bookMyticket(5);
+bookMyticket(4);
+bookMyticket(3); // exception
+
+bookMyticket(1); //no exception
+
+
+
+
+
+
+
