@@ -1,0 +1,37 @@
+import java.util.Vector;
+
+public class Day6Demos {
+
+	public static void main(String[] args) {
+	
+		
+		Vector v=new Vector();
+		
+		
+		int x=50;
+		String y="hellow world";
+		float z=10.5f;
+		
+		v.add(x);
+		v.add(y);
+		v.add(z);
+		
+		
+		System.out.println(v);
+		
+		v.insertElementAt("hell", 2);
+
+		System.out.println(v);
+
+		
+		v.remove("hell");
+		System.out.println(v);
+
+	}
+}
+
+
+
+
+
+
