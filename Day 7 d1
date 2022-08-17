@@ -1,0 +1,38 @@
+
+public class Day6Demos {
+
+		
+		
+	void test(int x)
+	{
+		
+		if(x< 18 || x> 50 )
+			throw new IllegalArgumentException();
+		
+		else
+			System.out.println("employee selected");
+	}
+	
+	
+	public static void main(String[] args) {
+	
+		Day6Demos d=new Day6Demos();
+		d.test(55);
+		System.out.println("line after test");
+		
+	
+	}
+
+}
+
+// exception : abnormal condition occurs during program execution
+//and terminates the flow of program
+
+//exception handling : protects d program frm being terminated
+//try , catch , finally , throw , throws 
+
+
+
+
+
+
