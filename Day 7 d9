@@ -1,0 +1,25 @@
+import java.util.Vector;
+
+public class Day6Demos {
+
+	public static void main(String[] args) {
+	
+		
+		Vector<Integer> rollNos=new Vector<>();
+		
+		rollNos.add(5);
+		rollNos.add(6);
+		rollNos.add(7);
+		rollNos.add(8);
+		//rollNos.add("hello");
+		
+		System.out.println(rollNos);
+		
+	}
+}
+
+
+
+
+
+
