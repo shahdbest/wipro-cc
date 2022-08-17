@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+
+
+
+public class Day6Demos {
+
+	public static void main(String[] args) {
+	
+		//collections works only with Objects
+		ArrayList<String> test=new ArrayList<>();
+		
+		
+		
+		
+		test.add("virat");
+		test.add("rohit");
+		test.add("rahul");
+		test.add("ashwin");
+		test.add("bumrah");
+		test.add("shami");
+		test.add("dhoni");
+		
+	System.out.println(test);
+	
+	Collections.sort(test);
+	System.out.println("---after sort----");
+	System.out.println(test);
+	
+	Collections.sort(test, Collections.reverseOrder());
+	System.out.println("---after reverse sort----");
+	System.out.println(test);
+	
+	
+	}
+}
+
+
+//list -> ordered , contains duplicates
+
+
+
