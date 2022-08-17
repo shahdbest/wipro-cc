@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+
+public class Day6Demos {
+
+	public static void main(String[] args) {
+	
+		//collections works only with Objects
+		ArrayList<Integer> test=new ArrayList<>();
+		
+		
+		Integer i=10;
+		
+		int x=11;
+		
+		test.add(i);
+		test.add(x);
+		test.add(15);
+		test.add(12);
+		test.add(11);
+		test.add(2, 900);
+	
+	System.out.println(test);
+		
+		Iterator<Integer> testItr =test.iterator();
+		
+		while(testItr.hasNext())
+		{
+			
+			int next=testItr.next();
+			System.out.println(next);
+			
+			if(next==10)
+			testItr.remove();
+		}
+	
+		System.out.println(test);
+	}
+}
+
+
+//list -> ordered , contains duplicates
+
+
+
