@@ -1,0 +1,169 @@
+import java.util.Map;
+
+public class ShowRoom {
+
+	String name;
+	Map<String, Car> cars;
+	public String getName() {
+		return name;
+	}
+	
+	
+	Car searchCar(String name){
+	
+		return cars.get(name);
+	}
+	
+	void addCar(String carName,Car car)
+	{
+		
+		cars.put(carName, car);
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Map<String, Car> getCars() {
+		return cars;
+	}
+	public void setCars(Map<String, Car> cars) {
+		this.cars = cars;
+	}
+	
+	public ShowRoom() {
+		// TODO Auto-generated constructor stub
+	}
+	public ShowRoom(String name, Map<String, Car> cars) {
+		super();
+		this.name = name;
+		this.cars = cars;
+	}
+	@Override
+	public String toString() {
+		return "ShowRoom [name=" + name + ", cars=" + cars + "]";
+	}
+	
+	
+}
+
+
+---------------------------------------car 
+
+
+public class Car {
+
+	
+	String name;
+	String color;
+	String maker;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getMaker() {
+		return maker;
+	}
+	public void setMaker(String maker) {
+		this.maker = maker;
+	}
+	
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+	public Car(String name, String color, String maker) {
+		super();
+		this.name = name;
+		this.color = color;
+		this.maker = maker;
+	}
+	@Override
+	public String toString() {
+		return "Car [name=" + name + ", color=" + color + ", maker=" + maker + "]";
+	}
+	
+	
+}
+
+
+----------service 
+
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class ShowroomService {
+
+	public static void main(String[] args) {
+
+			//RNS
+		Car car1=new Car("swift", "black", "maruti");
+		Car car2=new Car("baleno", "black", "maruti");
+		Car car3=new Car("etios", "black", "toyota");
+		
+		//--------------------------------------------
+		//Nandi
+		Car car4=new Car("glanza", "black", "toyota");
+		Car car5=new Car("safari", "black", "tata");
+		Car car6=new Car("tigor", "black", "tata");
+		Car car7=new Car("nexon", "black", "tata");
+	
+		
+		
+		Map<String, Car> cars=new HashMap<String, Car>();
+		
+		cars.put(car1.getName(), car1);
+		cars.put(car2.getName(), car2);
+		cars.put(car3.getName(), car3);
+		
+		ShowRoom showRoom1=new ShowRoom("RNS Motors",cars);
+			
+		
+
+		Map<String, Car> cars2=new HashMap<String, Car>();
+		
+		cars2.put(car4.getName(), car4);
+		cars2.put(car5.getName(), car5);
+		cars2.put(car6.getName(), car6);
+		cars2.put(car7.getName(), car7);
+
+		
+		ShowRoom showRoom2=new ShowRoom("Nandi Motors",cars2);
+				
+		
+		Car car= showRoom2.searchCar("baleno");
+		
+			if(car==null)
+				{
+				System.out.println("the car u searched is not found");
+				
+				System.out.println("available cars are");
+				
+					Map<String, Car> carsInS2= showRoom2.getCars();
+					
+					for(Entry<String, Car> s2car :carsInS2.entrySet())
+					{
+						
+						System.out.println(s2car.getValue());
+					}
+				
+				
+				}
+		
+			else
+		System.out.println(car);
+
+		
+		
+	}
+
+}
+
