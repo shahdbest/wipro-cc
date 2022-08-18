@@ -1,0 +1,50 @@
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+
+//set-> unordered , unique
+
+public class Day8Demos {
+
+	
+	
+	public static void main(String[] args) {
+
+
+		LinkedList<String> cities=new LinkedList<String>();
+		
+		
+		cities.add("Bangalore");
+		cities.add("Bijapur");
+		cities.add("Bidar");
+		cities.add("Gulbarga");
+		cities.add("Mumbai");
+		cities.add("Pune");
+		cities.add("Sholapur");
+	
+		
+		System.out.println(cities);
+		
+		cities.offer("Mysore");
+		System.out.println("after offer Mysore");
+		System.out.println(cities);
+		
+		cities.addFirst("Hubli");
+		System.out.println(cities);
+		
+
+		cities.offerFirst("Shivmoga");
+		System.out.println(cities);
+		System.out.println(cities);
+	
+		
+	}
+
+}
