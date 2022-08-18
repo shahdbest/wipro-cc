@@ -1,0 +1,102 @@
+
+public class Car {
+
+	
+	String name;
+	String color;
+	String maker;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public String getMaker() {
+		return maker;
+	}
+	public void setMaker(String maker) {
+		this.maker = maker;
+	}
+	
+	public Car() {
+		// TODO Auto-generated constructor stub
+	}
+	public Car(String name, String color, String maker) {
+		super();
+		this.name = name;
+		this.color = color;
+		this.maker = maker;
+	}
+	@Override
+	public String toString() {
+		return "Car [name=" + name + ", color=" + color + ", maker=" + maker + "]";
+	}
+	
+	
+}
+
+
+----------------------------------------------
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CarService {
+
+	Map<String, Car> cars=new HashMap<>();
+
+		
+	void addCar(String carName,Car car)
+	{
+		
+		cars.put(carName, car);
+	}
+		
+	Car searchCar(String name)
+	{
+		
+		return cars.get(name);
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+
+		CarService carService=new CarService();
+		Car car1=new Car("swift", "black", "maruti");
+		Car car2=new Car("baleno", "black", "maruti");
+		Car car3=new Car("etios", "black", "toyota");
+		Car car4=new Car("glanza", "black", "toyota");
+		Car car5=new Car("safari", "black", "tata");
+		Car car6=new Car("tigor", "black", "tata");
+		Car car7=new Car("nexon", "black", "tata");
+		
+		
+		
+		carService.addCar(car1.getName(), car1);
+		carService.addCar(car2.getName(), car2);
+		carService.addCar(car3.getName(), car3);
+		carService.addCar(car4.getName(), car4);
+		carService.addCar(car5.getName(), car5);
+		carService.addCar(car6.getName(), car6);
+		carService.addCar(car7.getName(), car7);
+		
+		
+		
+		
+		Car car= carService.searchCar("etios");
+		
+		System.out.println(car);
+	}
+
+}
+
