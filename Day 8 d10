@@ -1,0 +1,35 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class Day8Demos {
+
+	
+	public static void main(String[] args) {
+
+		Map<Integer, String> myMap=new HashMap<>();
+		
+		myMap.put(18, "Virat");
+		myMap.put(7, "Dhoni");
+		myMap.put(10, "Sachin");
+		myMap.put(45, "Rohit");
+		
+		
+		//System.out.println(myMap.get(7));
+	
+		
+		Set<Integer> keys= myMap.keySet();
+		
+		
+		//System.out.println(keys);
+		
+		for(int key:keys)
+		{
+			System.out.println(key + " "+myMap.get(key));
+		}
+		
+		
+		
+	}
+
+}
