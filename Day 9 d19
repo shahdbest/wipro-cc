@@ -1,0 +1,43 @@
+
+@FunctionalInterface
+interface TestInterface
+{
+
+	void disp();
+	
+	default void test()
+	{
+		
+		System.out.println("def meth test in interface");
+	}
+	
+}
+
+
+public class Day9Demos {
+
+	public static void main(String[] args) {
+		
+		TestInterface i=new TestInterface() {
+			
+			@Override
+			public void disp() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void test()
+			{
+				
+				System.out.println("def meth test in interface override");
+			}
+		};
+		
+		
+		
+		i.test();
+		i.disp();
+	}
+
+}
