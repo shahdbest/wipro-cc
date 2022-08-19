@@ -1,0 +1,37 @@
+//The target type of this expression must be a functional interface
+
+//functional interface : interface with 1 abstract method 
+
+@FunctionalInterface // ensures below interface is functional
+interface TestInterface{
+	void disp(String msg);
+
+}
+
+
+public class Day9Demos {
+	public static void main(String[] args) {
+		
+//		TestInterface i= (String msg)->{
+//			
+//			System.out.println("disp meth with lambda "+msg);
+//		};
+//	
+//		i.disp("HEllo world");
+//		
+
+		
+	TestInterface i= (msg)->{
+			
+			System.out.println("disp meth with lambda "+msg);
+		};
+	
+		i.disp("HEllo world");
+		
+	
+		
+		
+		
+	}
+
+}
