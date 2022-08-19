@@ -1,0 +1,27 @@
+import java.util.Optional;
+
+public class Day9Demos {
+
+	public static void main(String[] args) {
+
+		
+		//String name=null;
+		
+		String name="Hello world";
+		
+		Optional<String> optStr=Optional.ofNullable(name);
+		
+		
+		if(optStr.isPresent())
+		{
+			String nam1=optStr.get();
+			System.out.println("not null "+nam1);
+			System.out.println("not null "+nam1.toUpperCase());
+		}
+		else
+			System.out.println("name is null");
+			
+			
+	}
+
+}
