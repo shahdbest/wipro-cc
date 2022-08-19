@@ -1,0 +1,23 @@
+
+interface TestInterface{
+	void abc();
+	//void abc1();
+}
+
+
+
+
+public class Day9Demos {
+
+	public static void myMethod(){
+		System.out.println("my method ");
+	}
+	
+	public static void main(String[] args) {
+		
+		TestInterface i=Day9Demos::myMethod;
+		i.abc();
+		
+	}
+
+}
