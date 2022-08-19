@@ -1,0 +1,72 @@
+interface TestInterface{
+	void disp();
+}
+
+class TestClass implements TestInterface{
+	@Override
+	public void disp() {
+		System.out.println("disp meth");
+	}
+}
+
+public class Day9Demos {
+	public static void main(String[] args) {
+		
+		TestInterface i=new TestClass();
+		i.disp();
+		
+	}
+
+}
+
+----------------------------------------------------------------------
+
+
+interface TestInterface{
+	void disp();
+}
+
+
+public class Day9Demos {
+	public static void main(String[] args) {
+		
+		TestInterface i=new TestInterface() {
+			
+			@Override
+			public void disp() {
+			System.out.println("disp meth what ??");	
+			}
+		};
+		i.disp();
+		
+	}
+
+}
+
+
+------------------------------------------------------java 8 lambda 
+
+interface TestInterface{
+	void disp();
+}
+
+
+public class Day9Demos {
+	public static void main(String[] args) {
+		TestInterface i= ()->{			
+			System.out.println("disp meth with lambda");
+		};
+	
+		i.disp();
+		
+	}
+
+}
+
+
+
+
+
+
+
+
