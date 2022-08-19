@@ -1,0 +1,30 @@
+//The target type of this expression must be a functional interface
+
+//functional interface : interface with 1 abstract method 
+
+@FunctionalInterface // ensures below interface is functional
+interface TestInterface{
+	float converter(float dollar);
+
+}
+
+
+public class Day9Demos {
+	public static void main(String[] args) {
+		
+		
+	TestInterface i= (dollar)->{
+			float res=(dollar*80);
+			//System.out.println(" Rupees "+res);
+			return res;
+		};
+	
+		float x= i.converter(10);
+		System.out.println(x +"Rupees"); 
+	
+		
+		
+		
+	}
+
+}
